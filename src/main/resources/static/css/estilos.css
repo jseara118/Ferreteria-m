@@ -1,0 +1,49 @@
+.contenedor-imagen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+}
+.contenedor-imagen::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height:600px;
+    background-color: #0b0b0c;
+    opacity: 0.5;
+}
+.container-login, .container-registro{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+    text-align: left; 
+    color: white;
+}
+.container-login h2, .container-registro h2{
+    margin-top: 150px; 
+    text-align: center;
+}
+.imagen {
+    width: 700px;
+    height:600px;
+}
+.regitrarse{
+    position: absolute;
+    left: 10%;
+}
+.dropdown-item2{
+   
+   left: 10%;
+}
+
+
+
+
