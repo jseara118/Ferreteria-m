@@ -15,7 +15,7 @@
         </div>
         <div class="container-login">
             <form class="px-4 py-3" method="post" th:action="@{/login}">
-                <h2>Iniciar Sesión</h2>
+                <h2>Iniciar Sesión.</h2>
                 <div class="mb-3">
                     <label for="username" class="form-label">Nombre de usuario:</label>
                     <input type="text" name="username" class="form-control" id="username" placeholder="nombre de usuario" required="true"/>
@@ -35,12 +35,6 @@
             </a>
         </div>
 
-        <footer th:fragment="footer" class="bg-dark fixed-bottom text-white text-center">
-    <div class="container">
-        <div class="col">
-            <p>&COPY; FerroMart Todos los Derechos Reservados</p>
-        </div>
-    </div>
-</footer>
+        <footer th:replace="~{layout/plantilla :: footer}"/>
     </body>
 </html>
